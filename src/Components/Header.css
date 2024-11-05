@@ -1,0 +1,18 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  max-width: 1000px; /* Sets a maximum width for the header */
+  margin: 0 auto; /* Centers the header horizontally */
+  background-color: #fff; /* Adjust background color as desired */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
