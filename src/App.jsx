@@ -4,6 +4,7 @@ import Header from './components/Header';
 import HomePage from './Components/HomePage';
 import SignUp from './Components/SignUp';
 import Login from './Components/Login';
+import ToDo from './Pages/ToDo';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/todo" element={<ToDo />} />
         {/* Other routes can go here */}
       </Routes>
     </Router>
