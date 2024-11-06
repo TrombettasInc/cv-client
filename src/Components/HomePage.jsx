@@ -2,26 +2,42 @@ import React from 'react';
 import './HomePage.css';
 import { useNavigate } from 'react-router-dom';
 
-const HomePage = () => {
- 
-    const navigate = useNavigate();
-    
-    const handleStartClick = () => {
-        navigate('/signup');
-    }
+const projects = [
+    { id: 1, name: 'Project One', color: '#DA4453' },
+    { id: 2, name: 'Project Two', color: '#E9573F' },
+    { id: 3, name: 'Project Three', color: '#F6BB42' },
+    { id: 4, name: 'Project Four', color: '#8CC152' },
+    { id: 5, name: 'Project Five', color: '#37BC9B' },
+    { id: 6, name: 'Sign Up / Login', color: '#3BAFDA', isAuth: true },
+];
 
-  return (
-    <div className="homepage">
-      <div className="homepage-content">
-        <p className="homepage-text">
-          Welcome to My Project Portfolio. Explore a journey of creativity, skill, and continuous learning! This website is more than just a collection of projects; it’s a story of my progress, experimentation, and passion for development. Here, you’ll discover a curated curriculum of my work, crafted to showcase everything I can do. Each project represents a unique challenge, a new skill, or a creative solution I've developed along the way. As you navigate through the site, you’ll move project by project, getting a glimpse of my capabilities and growth. I hope you enjoy exploring this journey as much as I’ve enjoyed creating it.
-        </p>
-        <button onClick={handleStartClick} className='start-button'>
-        Let's start
-        </button>
-      </div>
-    </div>
-  );
+const HomePage = () => {
+    const navigate = useNavigate();
+
+    const handleStartClick = (project) => {
+        if (project.isAuth) {
+            navigate('/signup');
+        } else {
+            navigate(`/projects/${project.id}`);
+        }
+    };
+
+    return (
+        <div className="homepage">
+            <div className="grid-container">
+                {projects.map((project) => (
+                    <div
+                        key={project.id}
+                        className="grid-item"
+                        style={{ backgroundColor: project.color }}
+                        onClick={() => handleStartClick(project)}
+                    >
+                        <span className="project-name">{project.name}</span>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 };
 
 export default HomePage;
