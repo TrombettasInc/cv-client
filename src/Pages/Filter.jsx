@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './ToDo.module.css'
 
 const Filter = ({filter, setFilter, setSort}) => {
   return (

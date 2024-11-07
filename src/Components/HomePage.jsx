@@ -1,5 +1,5 @@
 import React from 'react';
-import './HomePage.css';
+import styles from './HomePage.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const projects = [
@@ -17,25 +17,24 @@ const HomePage = () => {
     const handleStartClick = (project) => {
         if (project.isAuth) {
             navigate('/signup');
-        } else if ( project.name === 'To Do'){
+        } else if (project.name === 'To Do') {
             navigate('/todo');
-        }
-        else {
+        } else {
             navigate(`/projects/${project.id}`);
         }
     };
 
     return (
-        <div className="homepage">
-            <div className="grid-container">
+        <div className={styles.homepage}>
+            <div className={styles['grid-container']}>
                 {projects.map((project) => (
                     <div
                         key={project.id}
-                        className="grid-item"
+                        className={styles['grid-item']}
                         style={{ backgroundColor: project.color }}
                         onClick={() => handleStartClick(project)}
                     >
-                        <span className="project-name">{project.name}</span>
+                        <span className={styles['project-name']}>{project.name}</span>
                     </div>
                 ))}
             </div>
