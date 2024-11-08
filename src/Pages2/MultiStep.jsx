@@ -48,7 +48,7 @@ const MultiStep = () => {
         <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
           <div className={styles["inputs-container"]}>{currentComponent}</div>
           <div className={styles.actions}>
-            {isFirstStep && (
+            {!isFirstStep && (
               <button type="button" onClick={() => changeStep(currentStep -1)}>
                 <GrFormPrevious />
                 <span>Back</span>

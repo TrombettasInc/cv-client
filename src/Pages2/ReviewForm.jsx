@@ -58,7 +58,7 @@ const ReviewForm = ({data, updateFieldHandler}) => {
 
         </div>
         <div className={styles['form-control']}>
-          <label htmlFor="comment">Comment</label>
+          <label htmlFor="comment">Comment:</label>
           <textarea 
           name="comment" 
           id="comment"

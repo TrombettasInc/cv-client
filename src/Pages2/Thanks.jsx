@@ -22,11 +22,11 @@ const Thanks = ({data}) => {
      <p>To finish your review please click on the submit button</p>
      <h3>Here is your review summary,  {data.name} </h3>
      <p className={styles['review-data']}>
-      <span>Satisfaction with the product</span>
+      <span>Satisfaction with the product:</span>
       {emojiData[data.review]}
      </p>
      <p className={styles['review-data']}>
-      <span>Comments</span>
+      <span>Comments:</span> {data.comment}
      </p>
     </div>
   )
