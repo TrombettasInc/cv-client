@@ -5,6 +5,7 @@ import HomePage from './Components/HomePage';
 import SignUp from './Components/SignUp';
 import Login from './Components/Login';
 import ToDo from './Pages/ToDo';
+import MultiStep from './Pages2/MultiStep';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/signup" element={<SignUp />} />
       <Route path="/login" element={<Login />} />
       <Route path="/todo" element={<ToDo />} />
+      <Route path="/multistep" element={<MultiStep />} />
         {/* Other routes can go here */}
       </Routes>
     </Router>

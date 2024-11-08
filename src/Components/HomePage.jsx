@@ -3,8 +3,8 @@ import styles from './HomePage.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const projects = [
-    { id: 1, name: 'To Do', color: '#b6e4eb' },
-    { id: 2, name: 'Project Two', color: '#d9f1f2' },
+    { id: 1, name: 'Task List', color: '#b6e4eb' },
+    { id: 2, name: 'e-commerce review', color: '#d9f1f2' },
     { id: 3, name: 'Project Three', color: '#fbdee2' },
     { id: 4, name: 'Project Four', color: '#feafab' },
     { id: 5, name: 'Project Five', color: '#fbd5b0' },
@@ -17,9 +17,12 @@ const HomePage = () => {
     const handleStartClick = (project) => {
         if (project.isAuth) {
             navigate('/signup');
-        } else if (project.name === 'To Do') {
+        } else if (project.name === 'Task List') {
             navigate('/todo');
-        } else {
+        } else if (project.name === 'e-commerce review'){
+            navigate('Multistep');
+        }
+        else {
             navigate(`/projects/${project.id}`);
         }
     };
