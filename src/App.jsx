@@ -6,6 +6,8 @@ import SignUp from './Components/SignUp';
 import Login from './Components/Login';
 import ToDo from './Pages/ToDo';
 import MultiStep from './Pages2/MultiStep';
+import Weather from './Pages3/Weather';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/todo" element={<ToDo />} />
       <Route path="/multistep" element={<MultiStep />} />
+      <Route path="/weather" element={<Weather />} />
         {/* Other routes can go here */}
       </Routes>
     </Router>

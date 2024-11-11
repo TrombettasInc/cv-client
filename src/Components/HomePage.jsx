@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 const projects = [
     { id: 1, name: 'Task List', color: '#b6e4eb' },
-    { id: 2, name: 'e-commerce review', color: '#d9f1f2' },
-    { id: 3, name: 'Project Three', color: '#fbdee2' },
+    { id: 2, name: 'e-Commerce Review', color: '#d9f1f2' },
+    { id: 3, name: 'Weather Forecast', color: '#fbdee2' },
     { id: 4, name: 'Project Four', color: '#feafab' },
     { id: 5, name: 'Project Five', color: '#fbd5b0' },
     { id: 6, name: 'Sign Up / Login', color: '#fcf1d7', isAuth: true },
@@ -21,6 +21,8 @@ const HomePage = () => {
             navigate('/todo');
         } else if (project.name === 'e-commerce review'){
             navigate('Multistep');
+        } else if(project.name === 'Weather Forecast'){
+            navigate('Weather');
         }
         else {
             navigate(`/projects/${project.id}`);
