@@ -60,10 +60,10 @@ const Translator = () => {
   };
 
   return (
-    <div className="items-center ">
-    <div className="min-h-[500px] max-w-[800px] bg-background flex flex-col border border-gray-200 rounded-lg">
+    <div className="min-h-screen flex items-center justify-center pt-0">
+    <div className="min-h-[430px] max-w-[800px] bg-background flex grow flex-col border border-gray-200 rounded-lg ">
 
-      <h1 className="px-2 py-8 text-center text-headerColor text-3xl font-normal">Translator</h1>
+      <h1 className="px-2 py-4 text-center text-headerColor text-3xl font-normal">Translator</h1>
 
       <main className="flex-grow flex items-start justify-center px-4 py-8">
         <div className="w-full max-w-5xl bg-white rounded-lg shadow-md overflow-hidden">
@@ -71,7 +71,7 @@ const Translator = () => {
             <select
               value={sourceLang}
               onChange={(e) => setSourceLang(e.target.value)}
-              className="text-sm text-textColor bg-transparent border-none focus:outline-none  cursor-pointer"
+              className="text-sm text-textColor bg-transparent border-none focus:outline-none cursor-pointer"
             >
               {languages.map((lang) => (
                 <option key={lang.code} value={lang.code}>
@@ -117,7 +117,7 @@ const Translator = () => {
                 value={sourceText}
                 onChange={(e) => setSourceText(e.target.value)}
                 placeholder="type your text"
-                className="w-full h-40 text-lg text-textColor bg-transparent resize-none border-none outline-none"
+                className="w-full h-40 text-lg text-textColor bg-transparent resize-none border-none outline-none shadow-none"
               ></textarea>
             </div>
 

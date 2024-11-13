@@ -6,7 +6,7 @@ const projects = [
     { id: 1, name: 'Task List', color: '#b6e4eb' },
     { id: 2, name: 'e-Commerce Review', color: '#d9f1f2' },
     { id: 3, name: 'Weather Forecast', color: '#fbdee2' },
-    { id: 4, name: 'Project Four', color: '#feafab' },
+    { id: 4, name: 'Translator', color: '#feafab' },
     { id: 5, name: 'Project Five', color: '#fbd5b0' },
     { id: 6, name: 'Sign Up / Login', color: '#fcf1d7', isAuth: true },
 ];
@@ -20,9 +20,11 @@ const HomePage = () => {
         } else if (project.name === 'Task List') {
             navigate('/todo');
         } else if (project.name === 'e-commerce review'){
-            navigate('Multistep');
+            navigate('/Multistep');
         } else if(project.name === 'Weather Forecast'){
             navigate('Weather');
+        }else if ( project.name === 'Translator'){
+            navigate('/Translator');
         }
         else {
             navigate(`/projects/${project.id}`);
