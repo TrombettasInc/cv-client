@@ -19,8 +19,8 @@ const HomePage = () => {
             navigate('/signup');
         } else if (project.name === 'Task List') {
             navigate('/todo');
-        } else if (project.name === 'e-commerce review'){
-            navigate('/Multistep');
+        } else if (project.name === 'e-Commerce Review'){
+            navigate('Multistep');
         } else if(project.name === 'Weather Forecast'){
             navigate('Weather');
         }else if ( project.name === 'Translator'){
