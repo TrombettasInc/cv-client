@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './MultiStep.module.css'
 import { BsEmojiSmileFill, BsFillEmojiHeartEyesFill } from 'react-icons/bs'
-import { BsFillEmojiSmileFill } from 'react-icons/bs'
 import { BsFillEmojiNeutralFill } from 'react-icons/bs'
 import { BsFillEmojiFrownFill } from 'react-icons/bs'
 

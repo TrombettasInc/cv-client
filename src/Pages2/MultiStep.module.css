@@ -1,106 +1,113 @@
-*{
-    font-family: "Barlow", sans-serif ;
-    padding:  0;
+/* Global styles for the MultiStep form */
+* {
+    font-family: "Barlow", sans-serif;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     color: #333;
 }
 
-p{
+p {
     color: #777;
-
 }
 
-body{
-    background-color:  #fff;
-
+body {
+    background-color: #fff;
 }
 
-.app{
-    padding:  2rem;
+.app {
+    padding: 2rem;
 }
 
-.header{
-    text-align:  center;
+.header {
+    text-align: center;
     margin-bottom: 2rem;
 }
 
-.header h2{
+.header h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.form-container{
+.form-container {
     max-width: 600px;
     margin: 0 auto;
     background-color: #fff;
     padding: 1.5rem;
-    box-shadow: rgba(100, 100, 111, .2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
 }
 
-.form-container form{
+.form-container form {
     max-width: 400px;
     margin: 0 auto;
 }
 
-.inputs-container{
+.inputs-container {
     min-height: 28px;
 }
 
-.form-control{
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    margin-bottom: 2rem;
+/* Updated styles for .form-control */
+.form-control {
+    display: ruby;
+    flex-direction: row; /* Aligns label and input side by side */
+    align-items: center; /* Vertically centers label and input */
+    gap: 1rem; /* Space between label and input */
+    margin-bottom: 1rem;
 }
 
-.label{
+.form-control label {
+    width: 100px; /* Adjust label width as needed */
     font-weight: bold;
     color: #777;
     font-size: 0.9rem;
+    line-height: 1.5; /* Ensure consistent line height */
 }
 
 .input,
-textarea{
-    padding: .6rem;
+textarea {
+    padding: 0.6rem;
     border: none;
     border-radius: 3px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0 ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    flex-grow: 1; /* Makes the input take the remaining space */
+    line-height: 1.5; /* Match the label's line height */
+    margin-bottom: 2rem;
 }
 
-textarea{
+textarea {
     height: 120px;
 }
 
-.actions{
+.actions {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+    
 }
 
-.actions button{
-    font-size: .9rem;
-    padding: .5rem 1rem;
+.actions button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
     align-items: center;
     border-radius: 3px;
     background-color: #f3f0f0;
     cursor: pointer;
     border: none;
-    transition: .3s;
+    transition: 0.3s;
 }
 
-.actions button:hover{
-    background-color:  #cfcfcf;
+.actions button:hover {
+    background-color: #cfcfcf;
 }
 
-.active{
+.active {
     background-color: red;
 }
 
-.steps{
+.steps {
     display: flex;
     gap: 4rem;
     justify-content: center;
@@ -110,16 +117,16 @@ textarea{
     position: relative;
     margin-bottom: 2rem;
 }
-.steps::after{
+
+.steps::after {
     content: "";
     width: 380px;
     border-bottom: 1px solid #ccc;
     position: absolute;
-    top:  20px;
-
+    top: 20px;
 }
 
-.step{
+.step {
     text-align: center;
     background-color: #fff;
     z-index: 1;
@@ -127,42 +134,37 @@ textarea{
     padding: 0.5rem;
 }
 
-.step svg{
+.step svg {
     font-size: 1.6rem;
-    margin-bottom: .2rem;
-
+    margin-bottom: 0.2rem;
 }
 
-.active{
+.active {
     font-weight: bold;
-
 }
-.active > svg{
+
+.active > svg {
     fill: #7076f4;
 }
 
-.form-control {
+.score-container {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-  }
-  
-  .score-container {
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-  }
+}
 
-.score-container svg{
+.score-container svg {
     font-size: 1.6rem;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 }
-.score-container svg:hover{
+
+.score-container svg:hover {
     fill: #7076f4;
 }
 
-.score-container input:checked ~ svg{
+.score-container input:checked ~ svg {
     fill: #7076f4;
 }
 
@@ -171,45 +173,45 @@ textarea{
     position: relative;
 }
 
-.radio-container input{
+.radio-container input {
     opacity: 0;
     position: absolute;
     top: 15px;
     left: 30px;
 }
 
-.radio-container p{
+.radio-container p {
     font-style: italic;
-    font-weight:  300;
-    font-size: .7rem;
-    margin-top: .4rem;
+    font-weight: 300;
+    font-size: 0.7rem;
+    margin-top: 0.4rem;
 }
 
-.thanks-container{
+.thanks-container {
     text-align: center;
 }
 
-.thanks-container h2{
+.thanks-container h2 {
     margin-bottom: 1rem;
 }
 
-.thanks-container p{
-   font-size: .9rem;
-   margin-bottom: .5rem;
+.thanks-container p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
 }
 
-.thanks-container h3{
+.thanks-container h3 {
     margin: 1rem 0;
 }
 
-.review-data{
+.review-data {
     text-align: left;
 }
 
-.review-data svg{
+.review-data svg {
     margin-left: 5px;
 }
 
-.review-data span{
+.review-data span {
     font-weight: bold;
 }
