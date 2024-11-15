@@ -1,3 +1,103 @@
+
+.sortContainer button {
+  width: 40px !important; 
+  height: 40px !important; 
+  padding: 0 !important; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px; 
+  background-color: #1fc4e9; 
+  color: #fff;
+  border: none;
+  border-radius: 3px; 
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.sortContainer button:hover {
+  opacity: 1;
+}
+
+button[type="submit"] {
+  
+  height: 40px; /* Same as width for square */
+  padding: 10; /* Remove padding to maintain square shape */
+  display: inline-flexbox;
+  align-items: self-end;
+  justify-content: center;
+  background-color: #f4d10b; /* Your existing color */
+  color: #fff;
+  border: none;
+  border-radius: 3px; /* Set to 0 for sharp edges */
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+.todo-list{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #555;
+}
+
+
+.complete{
+  background-color: #5cb85c;
+}
+
+.remove{
+  background-color: #d9534f;
+}
+
+
+input[type="text"],
+select {
+  width: 100%; /* Make them full width */
+  height: 40px; /* Ensure consistent height */
+  padding: 5px; /* Add padding for text visibility */
+  margin-bottom: 10px; /* Keep space between form elements */
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box; /* Ensure padding doesn't affect total width */
+}
+
+/* Optional: Ensure they match other design elements */
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #333974; /* Match your color theme */
+}
+
+input, select{
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 56%;
+}
+
+.filter, .search{
+  border-bottom: 1px solid #555;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.filter-options{
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.filter-options div{
+  flex: 1 1 0
+}
+
 .todoApp {
   max-width: 600px;
   margin: 0 auto 300px;
@@ -6,6 +106,7 @@
   border-radius: 10px;
   background-color: #f4f4f4;
   font-family: Arial, Helvetica, sans-serif;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .header {
@@ -38,7 +139,7 @@
   cursor: pointer;
   opacity: 0.8;
   transition: 0.3s;
-  margin-right: 10px; /* Add margin to create space */
+  margin-right: 10px; 
 }
 
 .completeButton:hover {
@@ -67,7 +168,9 @@
 .category {
   font-size: 0.9rem;
   color: #555;
+
 }
+
 .filterOptions {
   display: flex;
   justify-content: space-between; /* Space between the "Status" and "A to Z" sections */
@@ -83,9 +186,6 @@
   margin-right: 10px; /* Space between label and select */
 }
 
-.statusSelect {
-  /* Optional: Add styling to the select element */
-}
 
 .sortContainer {
   display: flex;
@@ -96,3 +196,5 @@
 .sortContainer p {
   margin-right: 10px; /* Add some space between the text and buttons */
 }
+
+

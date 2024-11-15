@@ -1,4 +1,4 @@
-/* Global styles for the MultiStep form */
+
 * {
     font-family: "Barlow", sans-serif;
     padding: 0;
@@ -8,7 +8,7 @@
 }
 
 p {
-    color: #777;
+    color: #333;
 }
 
 body {
@@ -47,21 +47,21 @@ body {
     min-height: 28px;
 }
 
-/* Updated styles for .form-control */
+
 .form-control {
-    display: ruby;
-    flex-direction: row; /* Aligns label and input side by side */
-    align-items: center; /* Vertically centers label and input */
-    gap: 1rem; /* Space between label and input */
+    display:flex ;
+    flex-direction: row; 
+    align-items: baseline; 
+    gap: 1rem; 
     margin-bottom: 1rem;
 }
 
 .form-control label {
-    width: 100px; /* Adjust label width as needed */
+    width: 100px; 
     font-weight: bold;
-    color: #777;
+    color: #333;
     font-size: 0.9rem;
-    line-height: 1.5; /* Ensure consistent line height */
+    line-height: 1.5; 
 }
 
 .input,
@@ -70,9 +70,14 @@ textarea {
     border: none;
     border-radius: 3px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    flex-grow: 1; /* Makes the input take the remaining space */
-    line-height: 1.5; /* Match the label's line height */
+    flex-grow: 1; 
+    line-height: 1.5; 
     margin-bottom: 2rem;
+}
+
+input[type="text"],
+select {
+  border: none;
 }
 
 textarea {
@@ -82,8 +87,7 @@ textarea {
 .actions {
     display: flex;
     justify-content: flex-end;
-    gap: 1rem;
-    
+    gap: 1rem; 
 }
 
 .actions button {
@@ -97,7 +101,9 @@ textarea {
     cursor: pointer;
     border: none;
     transition: 0.3s;
+    color: #333;
 }
+
 
 .actions button:hover {
     background-color: #cfcfcf;

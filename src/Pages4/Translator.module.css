@@ -24,6 +24,7 @@
   color: #5f6368;
   font-size: 24px;
   font-weight: normal;
+  width: 100%;
 }
 
 .mainContent {
@@ -48,13 +49,15 @@
   border-bottom: 1px solid #e0e0e0;
 }
 
-.select {
+.select{
   font-size: 14px;
   color: #3c4043;
   background: transparent;
   border: none;
   outline: none;
   cursor: pointer;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .button {
@@ -72,8 +75,8 @@
 }
 
 .button svg {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
@@ -144,3 +147,6 @@
   border-top: 1px solid #f8a0a0;
   color: #d10000;
 }
+
+
+
