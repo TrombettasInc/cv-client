@@ -1,0 +1,110 @@
+/* Container styling for the entire bento layout */
+
+.Abcontainer{
+  max-width: 80vw;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.bentoContainer {
+  display: grid; /* Establishes a grid layout for child elements. */
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns. */
+  grid-template-rows: repeat(3, auto); /* Creates 3 rows, each automatically sized based on content. */
+  gap: 16px; /* Adds spacing of 16px between each grid cell. */
+  padding: 20px; /* Adds 20px padding inside the container to prevent content from touching edges. */
+  background-color: #fff; /* Sets the background color of the container to black. */
+
+}
+
+/* Box 1: Large green box at the top-left, spanning two columns */
+.box1 {
+  grid-column: span 2; /* Spans across 2 columns. */
+  grid-row: 1; /* Positioned in the first row. */
+  background-color: #2f8655; /* Sets the background color to dark green. */
+  padding: 20px; /* Adds internal spacing of 20px for content inside the box. */
+  color: white; /* Sets the text color to white for contrast. */
+  font-size: 1.5rem; /* Increases the font size for better readability. */
+  font-weight: bold; /* Makes the text bold. */
+  border-radius: 10px;
+}
+
+/* Box 2: Green box to the right of Box 1, also spanning two columns */
+.box2 {
+  grid-column: span 2; /* Spans across 2 columns. */
+  grid-row: 1; /* Positioned in the first row. */
+  background-color: #11732a; /* Sets a slightly darker green color. */
+  padding: 20px; /* Adds internal spacing of 20px. */
+  color: white; /* Sets the text color to white. */
+  border-radius: 10px;
+}
+
+/* Box 3: Light purple testimonial box below Box 1 */
+.box3 {
+  grid-column: span 2; /* Spans across 2 columns. */
+  grid-row: 2; /* Positioned in the second row. */
+  background-color: #9e9eed; /* Sets the background to light purple. */
+  padding: 20px; /* Adds internal spacing of 20px. */
+  color: black; /* Sets the text color to black for contrast. */
+  border-radius: 10px;
+}
+
+/* Box 4: Lime green box with the "Back to Top" button */
+.box4 {
+  grid-column: span 1; /* Spans across 1 column. */
+  grid-row: 2; /* Positioned in the second row. */
+  background-color: #c2f252; /* Sets the background to lime green. */
+  padding: 20px; /* Adds internal spacing of 20px. */
+  text-align: center; /* Centers the text inside the box. */
+  color: black; /* Sets the text color to black. */
+  border-radius: 10px;
+}
+
+/* Box 5: Light yellow box for "Webflow Development" */
+.box5 {
+  grid-column: span 1; /* Spans across 1 column. */
+  grid-row: 2; /* Positioned in the second row. */
+  background-color: #f3e2a7; /* Sets the background to light yellow. */
+  padding: 20px; /* Adds internal spacing of 20px. */
+  color: black; /* Sets the text color to black. */
+  border-radius: 10px;
+}
+
+/* Box 6: Light cream-colored box for "Design + Webflow" */
+.box6 {
+  grid-column: span 2; /* Spans across 2 columns. */
+  grid-row: 3; /* Positioned in the third row. */
+  background-color: #ffe7cf; /* Sets the background to light cream. */
+  padding: 20px; /* Adds internal spacing of 20px. */
+  color: black; /* Sets the text color to black. */
+  border-radius: 10px;
+}
+
+/* Box 7: Blue box for "The Full Package" */
+.box7 {
+  grid-column: span 1; /* Spans across 1 column. */
+  grid-row: 3; /* Positioned in the third row. */
+  background-color: #0019e6; /* Sets the background to deep blue. */
+  padding: 20px; /* Adds internal spacing of 20px. */
+  color: white; /* Sets the text color to white for contrast. */
+  text-align: center; /* Centers the text inside the box. */
+  border-radius: 10px;
+}
+
+/* General button styles (applies to buttons in all boxes) */
+button {
+  background-color: black; /* Sets the button background color to black. */
+  color: white; /* Sets the button text color to white. */
+  border: none; /* Removes the default border. */
+  padding: 10px 20px; /* Adds 10px vertical and 20px horizontal padding. */
+  cursor: pointer; /* Changes the cursor to a pointer on hover. */
+  font-size: 1rem; /* Sets a consistent font size for buttons. */
+}
+
+button:hover {
+  background-color: white; /* Changes the button background to white on hover. */
+  color: black; /* Changes the button text color to black on hover. */
+}
