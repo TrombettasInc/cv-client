@@ -15,21 +15,21 @@ body {
     background-color: #fff;
 }
 
-.app {
+.ReviewApp {
     padding: 2rem;
 }
 
-.header {
+.ReviewHeader {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.header h2 {
+.ReviewHeader h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.form-container {
+.Reviewform-container {
     max-width: 600px;
     margin: 0 auto;
     background-color: #fff;
@@ -43,12 +43,12 @@ body {
     margin: 0 auto;
 }
 
-.inputs-container {
+.ReviewInputs-container {
     min-height: 28px;
 }
 
 
-.form-control {
+.Reviewform-control {
     display:flex ;
     flex-direction: row; 
     align-items: baseline; 
@@ -56,7 +56,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.form-control label {
+.Reviewform-control label {
     width: 100px; 
     font-weight: bold;
     color: #333;
@@ -64,8 +64,8 @@ body {
     line-height: 1.5; 
 }
 
-.input,
-textarea {
+.Reviewinput,
+.Reviewtext {
     padding: 0.6rem;
     border: none;
     border-radius: 3px;
@@ -84,13 +84,13 @@ textarea {
     height: 120px;
 }
 
-.actions {
+.ReviewActions {
     display: flex;
     justify-content: flex-end;
     gap: 1rem; 
 }
 
-.actions button {
+.ReviewActions button {
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
     display: flex;
@@ -105,15 +105,15 @@ textarea {
 }
 
 
-.actions button:hover {
+.ReviewActions button:hover {
     background-color: #cfcfcf;
 }
 
-.active {
+.Reviewactive {
     background-color: red;
 }
 
-.steps {
+.Reviewsteps {
     display: flex;
     gap: 4rem;
     justify-content: center;
@@ -124,7 +124,7 @@ textarea {
     margin-bottom: 2rem;
 }
 
-.steps::after {
+.Reviewsteps::after {
     content: "";
     width: 380px;
     border-bottom: 1px solid #ccc;
@@ -132,7 +132,7 @@ textarea {
     top: 20px;
 }
 
-.step {
+.Reviewstep {
     text-align: center;
     background-color: #fff;
     z-index: 1;
@@ -140,73 +140,73 @@ textarea {
     padding: 0.5rem;
 }
 
-.step svg {
+.Reviewstep svg {
     font-size: 1.6rem;
     margin-bottom: 0.2rem;
 }
 
-.active {
+.Reviewactive {
     font-weight: bold;
 }
 
-.active > svg {
+.Reviewactive > svg {
     fill: #7076f4;
 }
 
-.score-container {
+.Reviewscore-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
 }
 
-.score-container svg {
+.Reviewscore-container svg {
     font-size: 1.6rem;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.score-container svg:hover {
+.Reviewscore-container svg:hover {
     fill: #7076f4;
 }
 
-.score-container input:checked ~ svg {
+.Reviewscore-container input:checked ~ svg {
     fill: #7076f4;
 }
 
-.radio-container {
+.Reviewradio-container {
     text-align: center;
     position: relative;
 }
 
-.radio-container input {
+.Reviewradio-container input {
     opacity: 0;
     position: absolute;
     top: 15px;
     left: 30px;
 }
 
-.radio-container p {
+.Reviewradio-container p {
     font-style: italic;
     font-weight: 300;
     font-size: 0.7rem;
     margin-top: 0.4rem;
 }
 
-.thanks-container {
+.Reviewthanks-container {
     text-align: center;
 }
 
-.thanks-container h2 {
+.Reviewthanks-container h2 {
     margin-bottom: 1rem;
 }
 
-.thanks-container p {
+.Reviewthanks-container p {
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 
-.thanks-container h3 {
+.Reviewthanks-container h3 {
     margin: 1rem 0;
 }
 

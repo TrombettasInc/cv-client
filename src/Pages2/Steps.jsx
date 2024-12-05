@@ -5,16 +5,16 @@ import { FiSend } from 'react-icons/fi';
 
 const YourComponent = ({ currentStep, data }) => {
   return (
-    <div className={styles.steps}>
-      <div className={`${styles.step} ${styles.active}`}>
+    <div className={styles.Reviewsteps}>
+      <div className={`${styles.Reviewstep} ${styles.Reviewactive}`}>
         <AiOutlineUser />
         <p>Identification</p>
       </div>
-      <div className={`${styles.step} ${currentStep >= 1 ? styles.active : ''}`}>
+      <div className={`${styles.Reviewstep} ${currentStep >= 1 ? styles.Reviewactive : ''}`}>
         <AiOutlineStar />
         <p>Review</p>
       </div>
-      <div className={`${styles.step} ${currentStep >= 2 ? styles.active : ''}`}>
+      <div className={`${styles.Reviewstep} ${currentStep >= 2 ? styles.Reviewactive : ''}`}>
         <FiSend />
         <p>Submission</p>
       </div>

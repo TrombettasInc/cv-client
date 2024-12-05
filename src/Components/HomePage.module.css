@@ -6,14 +6,14 @@
     background-color: #fff;
 }
 
-.grid-container {
+.Homegrid-container {
     display: grid;
     grid-template-columns: repeat(3, 200px); /* Increased size for each square */
     grid-template-rows: repeat(2, 200px); /* Increased size for each square */
     gap: 20px; /* Space between squares */
 }
 
-.grid-item {
+.Homegrid-item {
     position: relative;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -29,18 +29,18 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for elevation */
 }
 
-.grid-item:hover {
+.Homegrid-item:hover {
     transform: translateY(-4px); /* Slight upward lift on hover */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Intensified shadow on hover */
     color: #fff;
 }
 
-.project-name {
+.Homeproject-name {
     position: absolute;
     opacity: 0;
     transition: opacity 0.2s ease;
 }
 
-.grid-item:hover .project-name {
+.Homegrid-item:hover .Homeproject-name {
     opacity: 1;
 }

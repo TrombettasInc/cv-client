@@ -36,26 +36,26 @@ const MultiStep = () => {
     useForm(formComponents);
 
   return (
-    <div className={styles.app}>
-      <div className={styles.header}>
+    <div className={styles.ReviewApp}>
+      <div className={styles.ReviewHeader}>
         <h2>Leave a review</h2>
         <p>
           We are happy with your visit, use this form to evaluate your purchase
         </p>
       </div>
-      <div className={styles["form-container"]}>
+      <div className={styles["Reviewform-container"]}>
         <Steps currentStep={currentStep} />
         <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
-          <div className={styles["inputs-container"]}>{currentComponent}</div>
-          <div className={styles.actions}>
+          <div className={styles["ReviewInputs-container"]}>{currentComponent}</div>
+          <div className={styles.ReviewActions}>
             {!isFirstStep && (
-              <button type="button" onClick={() => changeStep(currentStep -1)}>
+              <button  type="button" onClick={() => changeStep(currentStep -1)}>
                 <GrFormPrevious />
-                <span>Back</span>
+                <span  >Back</span>
               </button>
             )}
             {!isLastStep ? (
-              <button type="submit">
+              <button  type="submit">
                 <span>Next</span>
                 <GrFormNext />
               </button>

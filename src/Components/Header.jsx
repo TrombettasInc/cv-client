@@ -4,9 +4,9 @@ import styles from './Header.module.css';
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <Link to="/" className={styles.headerTitle}>Trombetta</Link>
-      <Link to="/about-contact" className={styles.headerTitle}>About/Contact</Link>
+    <header className={styles.Mainheader}>
+      <Link to="/" className={styles.MainheaderTitle}>Trombetta</Link>
+      <Link to="/cv" className={styles.MainheaderTitle}> Curriculum </Link>
     </header>
   );
 };

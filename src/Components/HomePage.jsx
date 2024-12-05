@@ -8,19 +8,19 @@ const projects = [
     { id: 3, name: 'Weather Forecast', color: '#fbdee2' },
     { id: 4, name: 'Translator', color: '#feafab' },
     { id: 5, name: 'Project Five', color: '#fbd5b0' },
-    { id: 6, name: 'Sign Up / Login', color: '#fcf1d7', isAuth: true },
+    { id: 6, name: 'Feedback/Contact', color: '#fcf1d7'},
 ];
 
 const HomePage = () => {
     const navigate = useNavigate();
 
     const handleStartClick = (project) => {
-        if (project.isAuth) {
-            navigate('/signup');
+        if (project.name === 'Feedback/Contact') {
+            navigate('/Feedback');
         } else if (project.name === 'Task List') {
             navigate('/todo');
         } else if (project.name === 'e-Commerce Review'){
-            navigate('Multistep');
+            navigate('/Multistep');
         } else if(project.name === 'Weather Forecast'){
             navigate('Weather');
         }else if ( project.name === 'Translator'){
@@ -33,15 +33,15 @@ const HomePage = () => {
 
     return (
         <div className={styles.homepage}>
-            <div className={styles['grid-container']}>
+            <div className={styles['Homegrid-container']}>
                 {projects.map((project) => (
                     <div
                         key={project.id}
-                        className={styles['grid-item']}
+                        className={styles['Homegrid-item']}
                         style={{ backgroundColor: project.color }}
                         onClick={() => handleStartClick(project)}
                     >
-                        <span className={styles['project-name']}>{project.name}</span>
+                        <span className={styles['Homeproject-name']}>{project.name}</span>
                     </div>
                 ))}
             </div>

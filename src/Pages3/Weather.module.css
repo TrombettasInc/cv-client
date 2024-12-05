@@ -13,7 +13,7 @@ body {
   line-height: 1.6;
 }
 
-.container {
+.Wecontainer {
   max-width: 1000px;
   padding: 20px;
   margin: 0 auto;
@@ -22,12 +22,12 @@ body {
   border-radius: 10px;
 }
 
-h1 {
+.Weh1 {
   font-size: 3rem;
   color: rgb(39, 123, 197);
 }
 
-input {
+.Weinput {
   padding: 10px;
   border-radius: 20px 0 0 20px;
   border: none;
@@ -37,7 +37,7 @@ input {
   margin-top: 30px;
 }
 
-button {
+.Webutton {
   background-color: #ff9800;
   border: 0;
   padding: 10px;
@@ -47,22 +47,22 @@ button {
   font-weight: bold;
 }
 
-button:hover {
+.Webutton:hover {
   background-color: #f57c00;
 }
 
-.weather-container {
+.Weweather-container {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   padding: 20px;
   margin: 20px 0;
 }
 
-h2 {
+.Weh2 {
   font-size: 2rem;
 }
 
-.weather-info {
+.Weweather-info {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,35 +71,35 @@ h2 {
   }
 }
 
-.temperature {
+.Wetemperature {
   font-weight: bold;
   font-size: 2.5rem;
 }
 
-.description {
+.Wedescription {
   text-transform: capitalize;
   font-size: 1.3rem;
   margin-bottom: 10px;
 }
 
-.details {
+.Wedetails {
   display: flex;
   justify-content: space-around;
 }
 
-.forecast-container {
+.Weforecast-container {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   padding: 20px;
   margin: 20px 0;
 
-  h3 {
+  .Weh3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
   }
 }
 
-.weather-list {
+.Weweather-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,15 +107,15 @@ h2 {
   gap: 10px;
 }
 
-.weather-item {
+.Weweather-item {
   text-align: center;
   background-color: rgb(215, 233, 238);
   border-radius: 10px;
   padding: 10px;
 }
 
-.forecast-day,
-.forecast-description {
+.Weforecast-day,
+.Weforecast-description {
   text-transform: capitalize;
   font-size: 1.1rem;
 }

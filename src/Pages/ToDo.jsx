@@ -55,11 +55,11 @@ const ToDo = () => {
     };
 
     return (
-        <div className={styles.todoApp}>
-            <h1 className={styles.header}>Task List</h1>
+        <div className={styles.TotodoApp}>
+            <h1 className={styles.Toheader}>Task List</h1>
             <Search search={search} setSearch={setSearch} />
             <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
-            <div className={styles.todoList}>
+            <div className={styles.TotodoList}>
                 {todos
                     .filter(todo =>
                         filter === "All"
@@ -79,23 +79,23 @@ const ToDo = () => {
                     .map(todo => (
                         <div
                             key={todo.id}
-                            className={styles.todoItem}
+                            className={styles.TotodoItem}
                             style={{
                                 textDecoration: todo.isCompleted ? "line-through" : ""
                             }}
                         >
-                            <div className={styles.content}>
+                            <div className={styles.Tocontent}>
                                 <p>{todo.text}</p>
-                                <p className={styles.category}>({todo.category})</p>
+                                <p className={styles.Tocategory}>({todo.category})</p>
                             </div>
                             <button
-                                className={styles.completeButton}
+                                className={styles.TocompleteButton}
                                 onClick={() => completeTodo(todo.id)}
                             >
                                 Complete
                             </button>
                             <button
-                                className={styles.removeButton}
+                                className={styles.ToremoveButton}
                                 onClick={() => removeTodo(todo.id)}
                             >
                                 X

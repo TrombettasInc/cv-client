@@ -1,4 +1,4 @@
-.header {
+.Mainheader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,13 +9,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.headerTitle {
+.MainheaderTitle {
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
   text-decoration: none;
 }
 
-.headerTitle:hover {
+.MainheaderTitle:hover {
   color: #555; /* Optional: change color on hover */
 }

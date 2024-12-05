@@ -1,5 +1,5 @@
 
-.sortContainer button {
+.TosortContainer button {
   width: 40px !important; 
   height: 40px !important; 
   padding: 0 !important; 
@@ -16,11 +16,11 @@
   transition: 0.3s;
 }
 
-.sortContainer button:hover {
+.TosortContainer button:hover {
   opacity: 1;
 }
 
-button[type="submit"] {
+.Tobutton[type="submit"] {
   
   height: 40px; /* Same as width for square */
   padding: 10; /* Remove padding to maintain square shape */
@@ -37,28 +37,28 @@ button[type="submit"] {
   margin-left: 20px;
 }
 
-button[type="submit"]:hover {
+.Tobutton[type="submit"]:hover {
   opacity: 1;
 }
 
-.todo-list{
+.Totodo-list{
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #555;
 }
 
 
-.complete{
+.Tocomplete{
   background-color: #5cb85c;
 }
 
-.remove{
+.Toremove{
   background-color: #d9534f;
 }
 
 
-input[type="text"],
-select {
+.Toinput[type="text"],
+.Toselect {
   width: 100%; /* Make them full width */
   height: 40px; /* Ensure consistent height */
   padding: 5px; /* Add padding for text visibility */
@@ -69,13 +69,13 @@ select {
 }
 
 /* Optional: Ensure they match other design elements */
-input[type="text"]:focus,
-select:focus {
+.Toinput[type="text"]:focus,
+.Toselect:focus {
   outline: none;
   border-color: #333974; /* Match your color theme */
 }
 
-input, select{
+.Toinput, .Toselect{
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
@@ -83,22 +83,22 @@ input, select{
   width: 56%;
 }
 
-.filter, .search{
+.Tofilter, .Tosearch{
   border-bottom: 1px solid #555;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
-.filter-options{
+.Tofilter-options{
   display: flex;
   justify-content: space-around;
   gap: 3rem;
 }
 
-.filter-options div{
+.Tofilter-options div{
   flex: 1 1 0
 }
 
-.todoApp {
+.TotodoApp {
   max-width: 600px;
   margin: 0 auto 300px;
   background-color: #fff;
@@ -109,17 +109,17 @@ input, select{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.header {
+.Toheader {
   text-align: center;
 }
 
-.todoList {
+.TotodoList {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #555;
 }
 
-.todoItem {
+.TotodoItem {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -130,7 +130,7 @@ input, select{
   align-items: center;
 }
 
-.completeButton {
+.TocompleteButton {
   background-color: #30acb1;
   color: #fff;
   padding: 5px 10px;
@@ -142,11 +142,11 @@ input, select{
   margin-right: 10px; 
 }
 
-.completeButton:hover {
+.TocompleteButton:hover {
   opacity: 1;
 }
 
-.removeButton {
+.ToremoveButton {
   background-color: #feafab;
   color: #fff;
   padding: 5px 10px;
@@ -157,43 +157,41 @@ input, select{
   transition: 0.3s;
 }
 
-.removeButton:hover {
+.ToremoveButton:hover {
   opacity: 1;
 }
 
-.content {
+.Tocontent {
   flex-grow: 1;
 }
 
-.category {
+.Tocategory {
   font-size: 0.9rem;
   color: #555;
-
 }
 
-.filterOptions {
+.TofilterOptions {
   display: flex;
   justify-content: space-between; /* Space between the "Status" and "A to Z" sections */
   align-items: center; /* Align items vertically */
 }
 
-.statusContainer {
+.TostatusContainer {
   display: flex;
   align-items: center;
 }
 
-.statusLabel {
+.TostatusLabel {
   margin-right: 10px; /* Space between label and select */
 }
 
-
-.sortContainer {
+.TosortContainer {
   display: flex;
   align-items: center;
   justify-content: flex-end; /* Align the buttons to the right */
 }
 
-.sortContainer p {
+.TosortContainer p {
   margin-right: 10px; /* Add some space between the text and buttons */
 }
 

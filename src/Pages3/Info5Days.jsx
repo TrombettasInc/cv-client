@@ -22,14 +22,14 @@ const Info5Days = ({weather5Days}) => {
      }
 
   return (
-    <div className={styles["forecast-container"]}>
-      <h3> 5 day Forecast</h3>
-      <div className={styles['weather-list']}>
+    <div className={styles["Weforecast-container"]}>
+      <h3 className={styles.Weh3} > 5 day Forecast</h3>
+      <div className={styles['Weweather-list']}>
       {next5Days.map(forecast => (
-        <div key={forecast.dt}  className= {styles['weather-item']} >
-            <p className={styles["forecast-day"]}> {convertDate(forecast)} </p>
+        <div key={forecast.dt}  className= {styles['Weweather-item']} >
+            <p className={styles["Weforecast-day"]}> {convertDate(forecast)} </p>
             <img src={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`} alt="forecast-icon" />
-            <p className={styles["forecast-description"]}>{forecast.weather[0].description}</p>
+            <p className={styles["Weforecast-description"]}>{forecast.weather[0].description}</p>
             <p>{Math.round(forecast.main.temp_min)}°C min / {Math.round(forecast.main.temp_max)}°C max</p>
         </div>
       ) )}

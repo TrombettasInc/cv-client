@@ -60,17 +60,17 @@ const Translator = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.innerContainer}>
-        <h1 className={styles.header}>Translator</h1>
+    <div className={styles.Trcontainer}>
+      <div className={styles.TrinnerContainer}>
+        <h1 className={styles.Trheader}>Translator</h1>
 
-        <main className={styles.mainContent}>
-          <div className={styles.cardContainer}>
-            <div className={styles.cardHeader}>
+        <main className={styles.TrmainContent}>
+          <div className={styles.TrcardContainer}>
+            <div className={styles.TrcardHeader}>
               <select
                 value={sourceLang}
                 onChange={(e) => setSourceLang(e.target.value)}
-                className={styles.select}
+                className={styles.Trselect}
               >
                 {languages.map((lang) => (
                   <option key={lang.code} value={lang.code}>
@@ -81,12 +81,9 @@ const Translator = () => {
 
               <button
                 onClick={swapTranslate}
-                className={styles.button}
+                className={styles.Trbutton}
               >
                 <svg
-                  className="w-5 h-5 text-headerColor"
-                  fill="none"
-                  stroke="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -102,39 +99,41 @@ const Translator = () => {
               <select
                 value={targetLang}
                 onChange={(e) => setTargetLang(e.target.value)}
-                className={styles.select}
+                className={styles.Trselect}
               >
+             
                 {languages.map((lang) => (
                   <option key={lang.code} value={lang.code}>
-                    {lang.name}
+                    {lang.name} 
                   </option>
-                ))}
+                  
+                ))} 
               </select>
             </div>
 
-            <div className={styles.textContainer} >
-              <div className="p-4">
+            <div className={styles.TrtextContainer} >
+              <div >
                 <textarea
                   value={sourceText}
                   onChange={(e) => setSourceText(e.target.value)}
                   placeholder="Type your text"
-                  className={styles.textarea}
+                  className={styles.Trtextarea}
                 ></textarea>
               </div>
 
-              <div className={styles.translatedTextContainer}>
+              <div className={styles.TrtranslatedTextContainer}>
                 {isLoading ? (
-                  <div className={styles.loadingSpinner}>
+                  <div className={styles.TrloadingSpinner}>
                     <div></div>
                   </div>
                 ) : (
-                  <p className="text-lg text-textColor"> {translatedText} </p>
+                  <p className={styles.Trp} > {translatedText} </p>
                 )}
               </div>
             </div>
 
             {error && (
-              <div className={styles.errorMessage}>
+              <div className={styles.TrerrorMessage}>
                 {error}
               </div>
             )}

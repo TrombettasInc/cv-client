@@ -4,10 +4,10 @@ import styles from './MultiStep.module.css';
 const UserForm = ({ data, updateFieldHandler }) => {
   return (
     <div>
-      <div className={styles['form-control']}>
+      <div className={styles['Reviewform-control']}>
         <label htmlFor="name">Name:</label>
         <input
-          className={styles.input}
+          
           type="text"
           name="name"
           id="name"
@@ -15,12 +15,13 @@ const UserForm = ({ data, updateFieldHandler }) => {
           required
           value={data.name || ""}
           onChange={(e) => updateFieldHandler("name", e.target.value)}
+          className={styles.Reviewinput}
         />
       </div>
-      <div className={styles['form-control']}>
+      <div className={styles['Reviewform-control']}>
         <label htmlFor="email">Email:</label>
         <input
-          className={styles.input}
+          className={styles.Reviewinput}
           type="email"
           name="email"
           id="email"
@@ -28,6 +29,7 @@ const UserForm = ({ data, updateFieldHandler }) => {
           required
           value={data.email || ""}
           onChange={(e) => updateFieldHandler("email", e.target.value)}
+          
         />
       </div>
     </div>

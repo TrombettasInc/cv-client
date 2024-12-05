@@ -3,13 +3,13 @@ import styles from './ToDo.module.css';
 
 const Filter = ({ filter, setFilter, setSort }) => {
   return (
-    <div className={styles.filter}>
+    <div className={styles.Tofilter}>
       <h2>Filter</h2>
-      <div className={styles.filterOptions}>
-        <div className={styles.statusContainer}>
-          <p className={styles.statusLabel}>Status:</p>
+      <div className={styles.TofilterOptions}>
+        <div className={styles.TostatusContainer}>
+          <p className={styles.TostatusLabel}>Status:</p>
           <select
-            className={styles.statusSelect}
+            className={styles.TostatusSelect}
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
           >
@@ -18,7 +18,7 @@ const Filter = ({ filter, setFilter, setSort }) => {
             <option value="Incomplete">Incomplete</option>
           </select>
         </div>
-        <div className={styles.sortContainer}>
+        <div className={styles.TosortContainer}>
           <p>A to Z:</p>
           <button onClick={() => setSort("Asc")}>Asc</button>
           <button onClick={() => setSort("Desc")}>Desc</button>

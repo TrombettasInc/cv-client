@@ -15,22 +15,23 @@ const TodoForm = ({ addTodo }) => {
 
   return (
     <div>
-      <h2 className={styles['todo-form']}>Create Task:</h2>
+      <h2 className={styles['Totodo-form']}>Create Task:</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="task title"
           value={value}
           onChange={(e) => setValue(e.target.value)}
+          className={styles.Toinput}
           
         />
-        <select value={category} onChange={(e) => setCategory(e.target.value)}>
+        <select value={category} onChange={(e) => setCategory(e.target.value)} className={styles.Toselect} >
           <option value="">Select a category</option>
           <option value="Work">Work</option>
           <option value="Personal">Personal</option>
           <option value="Studies">Studies</option>
         </select>
-        <button type="submit">Add Task</button>
+        <button type="submit" className={styles.Tobutton}>Add Task</button>
       </form>
     </div>
   );

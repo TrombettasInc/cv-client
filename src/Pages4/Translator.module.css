@@ -1,4 +1,4 @@
-.container {
+.Trcontainer {
   min-height: 60vh; /* lembrar aqui padrao */
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   padding-top: 0;
 }
 
-.innerContainer {
+.TrinnerContainer {
   display: flex;
   width: 100%;
   max-width: 800px;
@@ -15,52 +15,52 @@
   flex-grow: 1;
   flex-direction: column;
   border-radius: 8px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(110, 111, 100, 0.2) 0px 7px 29px 0px;
 }
 
-.header {
-  padding: 16px 8px;
+.Trheader {
+  padding: 16px 16px;
   text-align: center;
   color: #5f6368;
-  font-size: 24px;
-  font-weight: normal;
+  font-size: 35px;
+  font-weight: 500;
   width: 100%;
+  color: rgb(39, 123, 197);
 }
 
-.mainContent {
+.TrmainContent {
   display: flex;
   justify-content: center;
   padding: 32px 16px;
 }
 
-.cardContainer {
+.TrcardContainer {
   width: 100%;
   max-width: 960px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(110, 111, 100, 0.2) ;
   overflow: hidden;
 }
 
-.cardHeader {
+.TrcardHeader {
   display: flex;
   justify-content: space-between;
   padding: 16px;
   border-bottom: 1px solid #e0e0e0;
 }
 
-.select{
-  font-size: 14px;
+.Trselect{
+  font-size: 20px;
   color: #3c4043;
   background: transparent;
   border: none;
   outline: none;
   cursor: pointer;
-  width: 100%;
   justify-content: space-between;
 }
 
-.button {
+.Trbutton {
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
@@ -68,34 +68,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #59a1e0 !important;;
 }
 
-.button:hover {
+.Trbutton:hover {
   background-color: #f1f1f1;
 }
 
-.button svg {
+.Trbutton svg {
   width: 30px;
   height: 30px;
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
-  color: #5f6368;
+  color: #cfba1d;
 }
 
-.textContainer {
+.TrtextContainer {
   display: grid;
   grid-template-columns: 1fr;
 }
 
 @media (min-width: 768px) {
-  .textContainer {
+  .TrtextContainer {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 /* Textarea */
-.textarea {
+.Trtextarea {
   width: 100%;
   height: 160px;
   font-size: 16px;
@@ -106,16 +107,17 @@
   outline: none;
   box-shadow: none;
   display: grid;
+  padding: 16px;
 }
 
-.translatedTextContainer {
+.TrtranslatedTextContainer {
   position: relative;
   background-color: #f5f5f5;
   border-left: 1px solid #e0e0e0;
   padding: 16px;
 }
 
-.loadingSpinner {
+.TrloadingSpinner {
   position: absolute;
   inset: 0;
   display: flex;
@@ -123,7 +125,7 @@
   align-items: center;
 }
 
-.loadingSpinner div {
+.TrloadingSpinner div {
   border-top: 2px solid #0000ff;
   border-right: 2px solid transparent;
   border-radius: 50%;
@@ -141,7 +143,7 @@
   }
 }
 
-.errorMessage {
+.TrerrorMessage {
   padding: 16px;
   background-color: #fddede;
   border-top: 1px solid #f8a0a0;

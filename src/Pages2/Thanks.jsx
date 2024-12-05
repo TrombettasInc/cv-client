@@ -15,7 +15,7 @@ const emojiData = {
 
 const Thanks = ({data}) => {
   return (
-    <div className={styles['thanks-container']}>
+    <div className={styles['Reviewthanks-container']}>
       <h2>Almost over..</h2>
       <p>Your opinion is very important, soon you will receive a 10% discount coupon for your next purchase</p>
      <p>To finish your review please click on the submit button</p>

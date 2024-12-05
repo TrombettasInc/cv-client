@@ -25,10 +25,10 @@ const Weather = () => {
   }
 
   return (
-    <div className={styles.container}>
-      <h1>Weather Forecast</h1>
-      <input ref={inputRef} type="text" placeholder="type the city name" />
-      <button onClick={searchCity}>Search</button>
+    <div className={styles.Wecontainer}>
+      <h1 className={styles.Weh1} >Weather Forecast</h1>
+      <input ref={inputRef} type="text" placeholder="type the city name" className={styles.Weinput} />
+      <button onClick={searchCity} className={styles.Webutton} >Search</button>
       {weather && <Info weather={weather}/>}
       {weather5Days && <Info5Days weather5Days={weather5Days}/>}
     </div>
