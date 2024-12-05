@@ -8,6 +8,7 @@ import Weather from './Pages3/Weather';
 import Translator from './Pages4/Translator';
 import AboutContact from './Components/AboutContact'
 import Feedback from './Pages5/Feedback';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Route path="/feedback" element={<Feedback />} />
         {/* Other routes can go here */}
       </Routes>
+      <Footer />
     </Router>
   );
 }

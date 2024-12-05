@@ -16,7 +16,7 @@ body {
 .Wecontainer {
   max-width: 1000px;
   padding: 20px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   text-align: center;
   background-color: rgb(223, 223, 210);
   border-radius: 10px;
