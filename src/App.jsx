@@ -9,6 +9,7 @@ import Translator from './Pages4/Translator';
 import AboutContact from './Components/AboutContact'
 import Feedback from './Pages5/Feedback';
 import Footer from './Components/Footer';
+import EmbeddedWebsite from './Pages6/EmbeddedWebsite';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
       <Route path="/weather" element={<Weather />} />
       <Route path="/translator" element={<Translator />} />
       <Route path="/feedback" element={<Feedback />} />
-        {/* Other routes can go here */}
+      <Route path='/embeddedWebsite' element={<EmbeddedWebsite />} />
       </Routes>
       <Footer />
     </Router>

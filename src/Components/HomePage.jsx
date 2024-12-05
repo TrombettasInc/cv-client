@@ -7,7 +7,7 @@ const projects = [
     { id: 2, name: 'e-Commerce Review', color: '#d9f1f2' },
     { id: 3, name: 'Weather Forecast', color: '#fbdee2' },
     { id: 4, name: 'Translator', color: '#feafab' },
-    { id: 5, name: 'Project Five', color: '#fbd5b0' },
+    { id: 5, name: 'Frontend Web Showcase', color: '#fbd5b0' },
     { id: 6, name: 'Feedback/Contact', color: '#fcf1d7'},
 ];
 
@@ -25,6 +25,8 @@ const HomePage = () => {
             navigate('Weather');
         }else if ( project.name === 'Translator'){
             navigate('/Translator');
+        }else if( project.name === 'Frontend Web Showcase'){
+            navigate('/EmbeddedWebsite');
         }
         else {
             navigate(`/projects/${project.id}`);
