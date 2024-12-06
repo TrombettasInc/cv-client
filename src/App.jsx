@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
+import Header from './Components/Header';
 import HomePage from './Components/HomePage';
 import ToDo from './Pages/ToDo';
 import MultiStep from './Pages2/MultiStep';
