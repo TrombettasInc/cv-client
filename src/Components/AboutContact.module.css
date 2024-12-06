@@ -117,10 +117,6 @@
   list-style-type: none;
 }
 
-.abexperiencejobtitletwo {
-  font-size: 1.3rem;
-}
-
 /* Box 4: Lime green box with the "Back to Top" button */
 .box4 {
   grid-column: span 1; /* Spans across 1 column. */
@@ -286,6 +282,7 @@
 
 .abeducationul {
   list-style-type: none;
+  font-size: 18px;
 }
 
 
@@ -296,7 +293,7 @@
   background-color: #43aa8b; /* Sets the background to deep blue. */
   padding: 20px; /* Adds internal spacing of 20px. */
   color: white; /* Sets the text color to white for contrast. */
-  text-align: center; /* Centers the text inside the box. */
+   /* Centers the text inside the box. */
   border-radius: 10px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -305,18 +302,14 @@
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Intensified shadow on hover */
   color: #fff;
 }
-
-/* General button styles (applies to buttons in all boxes) */
-button {
-  background-color: black; /* Sets the button background color to black. */
-  color: white; /* Sets the button text color to white. */
-  border: none; /* Removes the default border. */
-  padding: 10px 20px; /* Adds 10px vertical and 20px horizontal padding. */
-  cursor: pointer; /* Changes the cursor to a pointer on hover. */
-  font-size: 1rem; /* Sets a consistent font size for buttons. */
+.abprojecth2{
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 
-button:hover {
-  background-color: white; /* Changes the button background to white on hover. */
-  color: black; /* Changes the button text color to black on hover. */
+.abprojectul{
+list-style-type: none;
+text-align: justify;
+font-size: 18px;
+margin-top: 15px;
 }

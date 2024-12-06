@@ -86,7 +86,7 @@ const AboutContact = () => {
           <br />
 
         <section className={styles.abexperiencesection} >
-        <h3 className={styles.abexperiencejobtitletwo}> Junior Manager</h3>
+        <h3 className={styles.abexperiencejobtitle}> Junior Manager</h3>
         <div className={styles.abexperienceinfo}>
         <h2 className={styles.abexperiencedate}> <FaCalendarCheck /> 10/2013 - 08/2014  </h2>
         <h2 className={styles.abexperiencelocal}><IoLocationSharp /> Rio de Janeiro</h2>
@@ -172,11 +172,15 @@ const AboutContact = () => {
         
         </div>
         <div className={styles.box7}>
-          <h3>The Full Package</h3>
-          <p>
-            No logo? No problem. I can also design your brand assets and
-            guidelines.
-          </p>
+          <section className={styles.abproject} >
+            <h2 className={styles.abprojecth2} >Homey App</h2>
+            <a  className={styles.abprojecta} href="https://myhomey.netlify.app/">https://myhomey.netlify.app/</a>
+            <ul className={styles.abprojectul} >
+              <li  >The Homey is part of a Home Improvement Project Tracker
+              application. This app allows users to organize and track their home improvement projects, ranging from everyday tasks like laundry to small fixes and major renovations.</li>
+              <li >Created using React, Node.js, Express, MongoDB.</li>
+            </ul>
+          </section>
           
         </div>
        
