@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Use min-height to ensure the container adapts */
+    min-height: 80vh; /* Use min-height to ensure the container adapts */
     padding: 20px; /* Add padding for smaller screens */
     background-color: #fff;
     overflow: hidden; /* Prevent content from spilling outside */
@@ -12,8 +12,8 @@
 /* Default grid layout for larger screens */
 .Homegrid-container {
     display: grid;
-    grid-template-columns: repeat(3, 200px); /* 3 columns */
-    grid-template-rows: repeat(2, 200px); /* 2 rows */
+    grid-template-columns: repeat(3, 260px); /* 3 columns */
+    grid-template-rows: repeat(2, 260px); /* 2 rows */
     gap: 20px;
 }
 
@@ -61,6 +61,14 @@
 
     .Homegrid-item {
         font-size: 0.9rem;
+    }
+
+    .Homeproject-name {
+        font-size: 0.8rem;
+        text-align: center;
+        opacity: 1;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgb(196, 193, 193);
     }
 }
 
