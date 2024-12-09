@@ -98,7 +98,7 @@ const Feedback = () => {
             value="Thank you for your feedback. I will reply to you as soon as possible!"
           />
           <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_next" value="http://localhost:5173/" />
+          <input type="hidden" name="_next" value="https://antoniatrombetta.netlify.app/" />
 
           <div className={styles.formGroup}>
             <div className={styles.buttonContainer}>
