@@ -17,6 +17,7 @@ body {
 
 .ReviewApp {
     padding: 2rem;
+    margin-bottom: 100px;
 }
 
 .ReviewHeader {
@@ -220,4 +221,14 @@ textarea {
 
 .review-data span {
     font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .Reviewsteps{
+        gap: 0;
+    }
+    .Reviewsteps::after {
+    max-width: 80px
+    
+    }
 }

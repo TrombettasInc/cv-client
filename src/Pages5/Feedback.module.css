@@ -20,8 +20,9 @@ body {
   background-color: #fff;
   padding: 1.5rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #fcf1d7;
+  margin-bottom: 100px;
 }
 
 .formHeader {
@@ -121,4 +122,72 @@ body {
 
 .buttonForm:hover {
   background-color: #cfcfcf;
+}
+
+@media (max-width: 480px) {
+  /* Container adjustments */
+
+  .feedbackContainer, .formContainer {
+    max-width: 100%; /* Ensure containers take full width on mobile */
+    padding: 1rem; /* Reduce padding */
+    margin: 0 10px; /* Add margin for spacing */
+    margin-bottom: 50px;
+  }
+
+  /* Form header */
+  .formHeader h2 {
+    font-size: 1.5rem; /* Adjust font size */
+    margin-bottom: 0.8rem; /* Adjust margin */
+  }
+
+  /* Form title and subtitle */
+  .formTitle {
+    font-size: 2rem; /* Adjust font size */
+    margin-bottom: 1rem;
+  }
+
+  .formSubtitle {
+    font-size: 1rem; /* Adjust font size */
+    margin-bottom: 1rem; /* Reduce margin */
+  }
+
+  /* Input fields */
+  .formInput,
+  .formTextarea {
+    width: 100%; /* Make input fields take full width */
+    padding: 0.8rem; /* Increase padding for easier interaction */
+  }
+
+  .formTextarea {
+    height: 100px; /* Reduce height of textarea for mobile */
+  }
+
+  /* Personal data container and labels */
+  .personalDataContainer {
+    display: block; /* Stack inputs vertically */
+    margin-bottom: 1rem; /* Add space between input groups */
+  }
+
+  .personalData {
+    flex-direction: column; /* Stack label and input vertically */
+    gap: 10px; /* Add space between input groups */
+  }
+
+  .formLabel {
+    width: auto; /* Let the label take up only as much space as needed */
+    font-size: 1.2rem; /* Adjust font size */
+    margin-bottom: 0.3rem; /* Adjust margin */
+  }
+
+  /* Button container */
+  .buttonContainer {
+    display: block; /* Stack button container vertically */
+    margin-top: 1rem; /* Adjust margin */
+  }
+
+  .buttonForm {
+    width: 100%; /* Make the button full width */
+    padding: 1rem; /* Increase padding for better touch interaction */
+    font-size: 1.2rem; /* Adjust font size */
+  }
 }
