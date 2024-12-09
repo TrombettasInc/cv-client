@@ -19,3 +19,10 @@
 .MainheaderTitle:hover {
   color: #555; /* Optional: change color on hover */
 }
+
+
+@media (max-width: 480px) {
+  .Mainheader{
+    padding: 1.5rem;
+  }
+}

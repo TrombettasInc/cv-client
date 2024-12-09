@@ -35,9 +35,6 @@
   color: #fff;
 }
 
-.abnametitle {
-}
-
 .abcontactlist a {
   text-decoration: none;
 }
@@ -80,6 +77,7 @@
   border-radius: 10px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .box3:hover {
   transform: translateY(-4px); /* Slight upward lift on hover */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Intensified shadow on hover */
@@ -91,7 +89,6 @@
   flex-direction: column;
   padding: 5px;
   padding-bottom: 10px;
-  
 }
 
 .abexperiencejobtitle {
@@ -99,7 +96,7 @@
   font-weight: bold; /* Texto em negrito */
 }
 
-.abexperienceinfo{
+.abexperienceinfo {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
@@ -140,17 +137,15 @@
   font-weight: bold;
   margin-bottom: 5px;
   padding: 15px;
-
 }
-.abachievementh2 svg{
+.abachievementh2 svg {
   margin-right: 8px;
 }
 
 .abachievementul {
   list-style-type: none;
-  
 }
-.abachievementul li{
+.abachievementul li {
   list-style-type: none;
   padding-left: 15px;
 }
@@ -169,12 +164,13 @@
   gap: 15px; /* Espaço entre as caixas */
   height: 100%; /* Garante que as caixas ocupem todo o espaço disponível */
 }
-.innerBox1{
-  background-color:#fd3866;
+
+.innerBox1 {
+  background-color: #fd3866;
 }
 
-.innerBox2{
-  background-color: #89CFF0;
+.innerBox2 {
+  background-color: #89cff0;
 }
 
 .innerBox1,
@@ -184,7 +180,7 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 8px;
-  padding:  15px;
+  padding: 15px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -194,13 +190,13 @@
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.abskillul{
+.abskillul {
   display: block;
   list-style-type: none;
   margin: 15px;
   font-size: 25px;
 }
-.abskillul svg{
+.abskillul svg {
   margin-right: 10px;
 }
 
@@ -233,7 +229,6 @@
   margin-right: 4px; /* Adjust spacing between icons if needed */
 }
 
-
 /* Box 6: Light cream-colored box for "Design + Webflow" */
 .box6 {
   grid-column: span 2; /* Spans across 2 columns. */
@@ -251,16 +246,14 @@
   color: #fff;
 }
 
-
 .abeducationsection {
   display: flex;
   flex-direction: column;
   padding: 5px;
   padding-bottom: 10px;
-  
 }
 
-.abeducationinfo{
+.abeducationinfo {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
@@ -285,7 +278,6 @@
   font-size: 18px;
 }
 
-
 /* Box 7: Blue box for "The Full Package" */
 .box7 {
   grid-column: span 2; /* Spans across 1 column. */
@@ -293,7 +285,7 @@
   background-color: #43aa8b; /* Sets the background to deep blue. */
   padding: 20px; /* Adds internal spacing of 20px. */
   color: white; /* Sets the text color to white for contrast. */
-   /* Centers the text inside the box. */
+  /* Centers the text inside the box. */
   border-radius: 10px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -302,14 +294,100 @@
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Intensified shadow on hover */
   color: #fff;
 }
-.abprojecth2{
+.abprojecth2 {
   font-size: 25px;
   margin-bottom: 15px;
 }
 
-.abprojectul{
-list-style-type: none;
-text-align: justify;
-font-size: 18px;
-margin-top: 15px;
+.abprojectul {
+  list-style-type: none;
+  text-align: justify;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* Adjust layout for tablets and smaller devices */
+@media (max-width: 768px) {
+  .bentoContainer {
+    grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6,
+  .box7 {
+    grid-column: span 2; /* Make each box span 2 columns for full width */
+  }
+}
+
+/* Adjust layout for tablets and smaller devices */
+@media (max-width: 768px) {
+  .bentoContainer {
+    grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6,
+  .box7 {
+    grid-column: span 2; /* Make each box span 2 columns for full width */
+  }
+}
+
+@media (max-width: 480px) {
+  .Abcontainer {
+    display: grid; /* Use grid instead for strict column layout */
+    grid-template-columns: 1fr; /* Force one column */
+    gap: 12px; /* Space between items */
+    justify-content: center; /* Center the items horizontally */
+    align-content: center; /* Center items vertically if the height allows */
+    max-width: 90%; /* Keep the container responsive */
+    width: 100%; /* Ensure it takes the full width */
+    padding: 0;
+  }
+
+  .bentoContainer {
+    grid-template-columns: 1fr; /* Keep grid items stacked */
+    gap: 10px; /* Adjust spacing if needed */
+    width: 100%; /* Ensure full width */
+    max-width: 95vw;
+    margin-left: 7%;
+  }
+  /* Make all boxes span the single column */
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6,
+  .box7 {
+    grid-column: span 1 !important; /* Full width */
+    grid-row: auto; /* Let the grid automatically assign rows */
+    /* Adjust inner padding */
+  }
+
+  /* Inner boxes (if nested flexbox is used) */
+  .innerBoxContainer {
+    gap: 10px;
+  }
+
+  .innerBox1,
+  .innerBox2 {
+    padding: 10px;
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .abskillul,
+  .ablanguageul,
+  .abprojectul {
+    font-size: 1.5rem;
+  }
 }
