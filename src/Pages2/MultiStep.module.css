@@ -63,6 +63,8 @@ body {
     color: #333;
     font-size: 0.9rem;
     line-height: 1.5; 
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .Reviewinput,
@@ -74,15 +76,21 @@ body {
     flex-grow: 1; 
     line-height: 1.5; 
     margin-bottom: 2rem;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 input[type="text"],
 select {
   border: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 textarea {
     height: 120px;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .ReviewActions {
@@ -230,5 +238,20 @@ textarea {
     .Reviewsteps::after {
     max-width: 80px
     
+    }
+
+    .Reviewinput{
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .Reviewtext textarea{
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .textarea{
+        -webkit-appearance: none;
+        appearance: none;
     }
 }
