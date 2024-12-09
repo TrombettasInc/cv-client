@@ -159,6 +159,8 @@ body {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px; /* Slightly round borders for better aesthetics */
     font-size: 1rem; /* Ensure text inside inputs is readable */
+    -webkit-appearance: none;
+    appearance: none;
   }
 
   .formTextarea {
@@ -180,6 +182,8 @@ body {
     width: auto; /* Let the label take up only as much space as needed */
     font-size: 1.2rem; /* Adjust font size */
     margin-bottom: 0.3rem; /* Adjust margin */
+    -webkit-appearance: none;
+    appearance: none;
   }
 
   /* Button container */
