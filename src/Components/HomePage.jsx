@@ -3,12 +3,12 @@ import styles from './HomePage.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const projects = [
-    { id: 1, name: 'Task List', color: '#b6e4eb' },
-    { id: 2, name: 'e-Commerce Review', color: '#d9f1f2' },
-    { id: 3, name: 'Weather Forecast', color: '#fbdee2' },
-    { id: 4, name: 'Translator', color: '#feafab' },
-    { id: 5, name: 'Frontend Web Showcase', color: '#fbd5b0' },
-    { id: 6, name: 'Feedback/Contact', color: '#fcf1d7'},
+    { id: 1, name: 'Task List', color: '#e63946' },
+    { id: 2, name: 'e-Commerce Review', color: '#ec9a9a' },
+    { id: 3, name: 'Weather Forecast', color: '#f1faee' },
+    { id: 4, name: 'Translator', color: '#a8dadc' },
+    { id: 5, name: 'Frontend Web Showcase', color: '#457b9d' },
+    { id: 6, name: 'Feedback/Contact', color: '#1d3557'},
 ];
 
 const HomePage = () => {

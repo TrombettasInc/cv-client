@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 5px; 
-  background-color: #1fc4e9; 
+  background-color: #42bfdd; 
   color: #fff;
   border: none;
   border-radius: 3px; 
@@ -28,7 +28,7 @@
   display: inline-flexbox;
   align-items: self-end;
   justify-content: center;
-  background-color: #f4d10b; /* Your existing color */
+  background-color: #084b83; /* Your existing color */
   color: #fff;
   border: none;
   border-radius: 3px; /* Set to 0 for sharp edges */
@@ -50,11 +50,11 @@
 
 
 .Tocomplete{
-  background-color: #5cb85c;
+  background-color: #edf2f4;
 }
 
 .Toremove{
-  background-color: #d9534f;
+  background-color: #d8315b;
 }
 
 
@@ -132,7 +132,7 @@
 }
 
 .TocompleteButton {
-  background-color: #30acb1;
+  background-color: #bbe6e4;
   color: #fff;
   padding: 5px 10px;
   border: none;
@@ -148,7 +148,7 @@
 }
 
 .ToremoveButton {
-  background-color: #feafab;
+  background-color: #ef233c;
   color: #fff;
   padding: 5px 10px;
   border: none;

@@ -3,11 +3,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #333;
+ 
 }
 
-p {
-  color: #333;
+.formSubtitle p {
+  color: #006d77;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   padding: 1.5rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 15px;
-  background-color: #fcf1d7;
+  background-color: #83c5be;
   margin-bottom: 100px;
 }
 
@@ -39,7 +39,7 @@ body {
 .formContainer {
   max-width: 600px;
   margin: 2rem auto;
-  background-color: #fff;
+  background-color: #edf6f9;
   padding: 1.5rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -49,14 +49,14 @@ body {
 .formTitle {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #5abac9;
+  color: #ed6a5a;
 }
 
 .formSubtitle {
   font-size: 1rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  color: #a5a2a2;
+  color: #006d77;
 }
 
 /* Input container */
@@ -113,7 +113,7 @@ body {
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
   border-radius: 3px;
-  background-color: #d9f1f2;
+  background-color: #f4d35e;
   cursor: pointer;
   border: none;
   transition: 0.3s;
@@ -183,7 +183,7 @@ body {
     font-size: 1.2rem; /* Adjust font size */
     margin-bottom: 0.3rem; /* Adjust margin */
     -webkit-appearance: none;
-    appearance: none;
+    appearance: non;
   }
 
   /* Button container */

@@ -5,7 +5,7 @@ import styles from './Header.module.css';
 const Header = () => {
   return (
     <header className={styles.Mainheader}>
-      <Link to="/" className={styles.MainheaderTitle}>Roberta Trombetta</Link>
+      <Link to="/" className={styles.MainheaderTitle}>Antonia Trombetta</Link>
       <Link to="/cv" className={styles.MainheaderTitle}> Curriculum </Link>
     </header>
   );

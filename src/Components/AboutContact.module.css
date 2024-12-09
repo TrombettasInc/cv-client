@@ -20,13 +20,14 @@
 .box1 {
   grid-column: span 2; /* Spans across 2 columns. */
   grid-row: 1; /* Positioned in the first row. */
-  background-color: #f1ae41; /* Sets the background color to dark green. */
+  background-color: #ffba08; /* Sets the background color to dark green. */
   padding: 20px; /* Adds internal spacing of 20px for content inside the box. */
   color: white; /* Sets the text color to white for contrast. */
   font-size: 1.4rem; /* Increases the font size for better readability. */
   font-weight: bold; /* Makes the text bold. */
   border-radius: 10px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  
 }
 
 .box1:hover {
@@ -49,7 +50,7 @@
 .box2 {
   grid-column: span 2; /* Spans across 2 columns. */
   grid-row: 1; /* Positioned in the first row. */
-  background-color: #fd6484; /* Sets a slightly darker green color. */
+  background-color: #faa307; /* Sets a slightly darker green color. */
   padding: 30px; /* Adds internal spacing of 20px. */
   color: white; /* Sets the text color to white. */
   border-radius: 10px;
@@ -71,7 +72,7 @@
 .box3 {
   grid-column: span 2; /* Spans across 2 columns. */
   grid-row: 2; /* Positioned in the second row. */
-  background-color: #078e92; /* Sets the background to light purple. */
+  background-color: #f48c06; /* Sets the background to light purple. */
   padding: 20px; /* Adds internal spacing of 20px. */
   color: black; /* Sets the text color to black for contrast. */
   border-radius: 10px;
@@ -118,10 +119,10 @@
 .box4 {
   grid-column: span 1; /* Spans across 1 column. */
   grid-row: 2; /* Positioned in the second row. */
-  background-color: #c2f252; /* Sets the background to lime green. */
+  background-color: #e85d04; /* Sets the background to lime green. */
   padding: 20px; /* Adds internal spacing of 20px. */
   /* Centers the text inside the box. */
-  color: black; /* Sets the text color to black. */
+   /* Sets the text color to black. */
   border-radius: 10px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -133,7 +134,7 @@
 }
 
 .abachievementh2 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 5px;
   padding: 15px;
@@ -166,11 +167,11 @@
 }
 
 .innerBox1 {
-  background-color: #fd3866;
+  background-color: #dc2f02;
 }
 
 .innerBox2 {
-  background-color: #89cff0;
+  background-color: #d00000;
 }
 
 .innerBox1,
@@ -233,7 +234,7 @@
 .box6 {
   grid-column: span 2; /* Spans across 2 columns. */
   grid-row: 3; /* Positioned in the third row. */
-  background-color: #187187; /* Sets the background to light cream. */
+  background-color: #9d0208; /* Sets the background to light cream. */
   padding: 20px; /* Adds internal spacing of 20px. */
   color: black; /* Sets the text color to black. */
   border-radius: 10px;
@@ -282,7 +283,7 @@
 .box7 {
   grid-column: span 2; /* Spans across 1 column. */
   grid-row: 3; /* Positioned in the third row. */
-  background-color: #43aa8b; /* Sets the background to deep blue. */
+  background-color: #e76f51; /* Sets the background to deep blue. */
   padding: 20px; /* Adds internal spacing of 20px. */
   color: white; /* Sets the text color to white for contrast. */
   /* Centers the text inside the box. */
@@ -391,3 +392,4 @@
     font-size: 1.5rem;
   }
 }
+

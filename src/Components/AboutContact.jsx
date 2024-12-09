@@ -29,76 +29,85 @@ const AboutContact = () => {
       <div className={styles.bentoContainer}>
         <div className={styles.box1}>
           <h1 className={styles.abnametitle} >
-            Roberta Trombetta Full-Stack Web Developer based in Bremen, germany
+            Antonia Trombetta Full-Stack Web Developer based in Bremen, germany
           </h1>
           <ul className={styles.abul}>
             <li className={styles.abcontactlist}>
-              <CiMobile4 /> <a href={'tel: +4917660192182'}>+4917660192182</a>
+              <CiMobile4 /> <a href={'tel: +4917660192182'}>+4915753652109</a>
               
             </li>
             <li className={styles.abcontactlist}>
-              <TfiEmail /> <a href={'mailto: betatrombettamail@gmail.com'}>betatrombettamail@gmail.com</a>
+              <TfiEmail /> <a href={'mailto: betatrombettamail@gmail.com'}>antonia.dorazio@gmail.com</a>
             </li>
             <li className={styles.abcontactlist}>
-            <CiLinkedin /> <a href="https://www.linkedin.com/in/roberta-trombetta/">https://www.linkedin.com/in/roberta-trombetta/</a>
+            <CiLinkedin /> <a href="https://www.linkedin.com/in/roberta-trombetta/">https://www.linkedin.com/in/antonia-trombetta/</a>
             </li>
             <li className={styles.abcontactlist}>
-            <FiGithub /> <a href="https://github.com/betafalc2">https://github.com/betafalc2</a>
+            <FiGithub /> <a href="https://github.com/betafalc2">https://github.com/TrombettasInc</a>
             </li>
           </ul>
         </div>
 
         <div className={styles.box2}>
           <p>
-            Full Stack Web Developer with a strong background in customer
-            service and team leadership. Proven track record in managing and
-            training diverse teams, optimizing processes, and enhancing
-            operational efficiency. Recently completed the Ironhack Full-Stack
-            Web Development Bootcamp, gaining proficiency in modern technologies
-            like HTML, CSS, JavaScript, React, and MongoDB. Highly adaptable,
-            with strong problem-solving skills, a passion for learning, and the
-            ability to drive results in dynamic environments.
+          I am a full-stack web developer with a strong background in customer service, 
+          having recently completed the Ironhack Full-Stack Web Development Bootcamp, 
+          where I gained proficiency in HTML, CSS, JavaScript, React, and MongoDB. 
+          I have worked in diverse artistic and commercial settings, 
+          which have strengthened my adaptability and interpersonal skills. 
+          I take pride in motivating others and driving results, while my flexibility,
+          practical mindset, and problem-solving abilities keep me focused on continuous improvement.
+          With a positive attitude and a passion for learning, 
+          I am ready to embrace new challenges and make a valuable impact.
           </p>
         </div>
 
         <div className={styles.box3}>
         <section className={styles.abexperiencesection} >
-        <h3 className={styles.abexperiencejobtitle}> Team Leader</h3>
+        <h3 className={styles.abexperiencejobtitle}> Team Supervisor Leader</h3>
         <div className={styles.abexperienceinfo}>
-        <h2 className={styles.abexperiencedate}> <FaCalendarCheck />10/2014 - 09/2023  </h2>
+        <h2 className={styles.abexperiencedate}> <FaCalendarCheck />09/2013 - 09/2023  </h2>
         <h2 className={styles.abexperiencelocal}><IoLocationSharp /> Bremen</h2>
         </div>
         </section>
           <ul className={styles.abexperienceul} >
-            <li> <IoIosArrowForward />From agent to Supervisor in 2 years and then to Team Leader after 5 
-            years, in 2021</li>
-            <li><IoIosArrowForward /> Customer support, reservations and booking of flights and servicing loyalty members</li>
-            <li><IoIosArrowForward /> Customer Relationship as well as independent handling and documentation of the incurring administrative tasks</li>
-            <li><IoIosArrowForward /> Information sharing through numerous emails with step by step guides for processes and extensive handouts for technical backoffice tasks that were shared with colleagues throughout the company</li>
-            <li><IoIosArrowForward /> Cataloguing of 100 processes for quick reference for several 
-            colleagues</li>
+            <li> <IoIosArrowForward />Rapid Career Progression from Agent to Supervisor (2 Years):
+            Promoted to Supervisor within two years due to exceptional performance and leadership potential.
+            Demonstrated continuous growth over eight years as a Supervisor, developing skills in team management, 
+            conflict resolution, and strategic planning.</li>
+            <li><IoIosArrowForward /> Supervisory Experience for Portugal, Spain, and Latin America Markets:
+            Provided supervisory support across multiple markets, adapting approaches to meet regional needs and cultural nuances.
+            Led and mentored teams, contributing to consistent performance improvements and service excellence.</li>
+            <li><IoIosArrowForward /> Administrative Task Management:
+            Independently managed and documented administrative tasks, 
+            ensuring smooth operations and accurate record-keeping.Streamlined processes to improve efficiency, 
+            reducing administrative overhead and freeing up time for core tasks.</li>
+            <li><IoIosArrowForward /> Customer Relationship Management:
+            Built and maintained strong relationships with customers, 
+            fostering loyalty and long-term engagement.Implemented strategies 
+            to enhance the customer experience, leading to increased satisfaction and improved service metrics.</li>
+            <li><IoIosArrowForward /> Customer Support, Reservations, and Booking:
+            Delivered high-quality support in customer service, handling complex inquiries, reservations, and booking processes with efficiency and professionalism.
+            Utilized problem-solving skills to address customer concerns, ensuring satisfaction and retention.</li>
             <li><IoIosArrowForward /> Daily email handling of the local account managers from Brazil and 
             Portugal</li>
-            <li><IoIosArrowForward /> Gave numerous trainings and refreshers to colleagues over the years</li>
-            <li><IoIosArrowForward /> Going to Romania at the end of March to give training and support 
-            for IGT</li>
           </ul>
           <br />
 
         <section className={styles.abexperiencesection} >
-        <h3 className={styles.abexperiencejobtitle}> Junior Manager</h3>
+        <h3 className={styles.abexperiencejobtitle}> Catering And Events Manager</h3>
         <div className={styles.abexperienceinfo}>
-        <h2 className={styles.abexperiencedate}> <FaCalendarCheck /> 10/2013 - 08/2014  </h2>
+        <h2 className={styles.abexperiencedate}> <FaCalendarCheck /> 04/2008 - 12/2012  </h2>
         <h2 className={styles.abexperiencelocal}><IoLocationSharp /> Rio de Janeiro</h2>
         </div>
         </section>
 
           <ul className={styles.abexperienceul} >
-            <li> <IoIosArrowForward /> Administrative and financial functions</li>
-            <li><IoIosArrowForward /> Closing cash register daily</li>
-            <li><IoIosArrowForward /> Direct contact with clients</li>
+            <li> <IoIosArrowForward /> Responsible for Customer Service, Company Event Calendar Management, and Team Leadership:</li>
+            <li><IoIosArrowForward /> Oversaw customer service operations, ensuring high standards of service and customer satisfaction.</li>
+            <li><IoIosArrowForward /> Managed the scheduling and coordination of company events, optimizing the event calendar for seamless execution.</li>
             <li><IoIosArrowForward /> Sales and relationship management with customers</li>
-            <li><IoIosArrowForward /> Lead the team of professionals</li>
+            <li><IoIosArrowForward /> Led teams and professionals, fostering a collaborative environment and driving performance improvements.</li>
             </ul>
       
         </div>
@@ -106,12 +115,12 @@ const AboutContact = () => {
 
         <section className={styles.abachievementsection} >
           <ul className={styles.abachievementul} >
-            <li className={styles.abachievementh2} > <IoDiamondOutline />Promoted to Team Leader within 5 years</li>
-            <li>managing a team and driving operational efficiency</li>
-            <li className={styles.abachievementh2}><IoDiamondOutline />Catalogued 100+ Processes </li>
-            <li>enhancing team productivity by providing quick reference guides for complex tasks</li>
-            <li className={styles.abachievementh2} ><IoDiamondOutline /> Trained and Supported Teams</li>
-            <li>both locally and internationally, including a special training mission to Romania for IGT</li>
+            <li className={styles.abachievementh2} > <IoDiamondOutline />Promoted to Team Supervisor within 2 years</li>
+            <li>Giving support to a team and driving operational efficiency</li>
+            <li className={styles.abachievementh2}><IoDiamondOutline />Ticketing Specialist  </li>
+            <li>Streamlined ticketing processes using advanced knowledge of Amadeus</li>
+            <li className={styles.abachievementh2} ><IoDiamondOutline /> Customer Support Excellence</li>
+            <li>Successfully resolved complex booking and ticketing issues for international markets (Portugal, Spain, and Latin America).</li>
             </ul>
             </section>
 
@@ -162,10 +171,11 @@ const AboutContact = () => {
           <br />
 
         <section className={styles.abeducationsection} >
-        <h3 className={styles.abeducationtitletwo}> Cinema </h3>
+        <h3 className={styles.abeducationtitletwo}> Art Student</h3>
         <div className={styles.abeducationinfo}>
-        <h2 className={styles.abeducationdate}> <FaCalendarCheck /> 01/2010 - 01/2012  </h2>
-        <h2 className={styles.abeducationlocal}><IoLocationSharp /> Estácio De Sá Universidade</h2>
+        <h2 className={styles.abeducationdate}> <FaCalendarCheck /> 01/2005 - 012/2010  </h2>
+        <h2 className={styles.abeducationlocal}><IoLocationSharp /> EAV Parque Lage</h2>
+        
         </div>
         </section>
       
