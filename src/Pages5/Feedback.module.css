@@ -156,10 +156,13 @@ body {
   .formTextarea {
     width: 100%; /* Make input fields take full width */
     padding: 0.8rem; /* Increase padding for easier interaction */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 
   .formTextarea {
     height: 100px; /* Reduce height of textarea for mobile */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
   }
 
   /* Personal data container and labels */
