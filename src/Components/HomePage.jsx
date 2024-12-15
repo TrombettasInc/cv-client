@@ -33,29 +33,27 @@ const HomePage = () => {
         }
     };
 
-    
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2, 
+                staggerChildren: 0.4, // Slower stagger for each child
             },
         },
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 20 }, 
+        hidden: { opacity: 0, y: 40 }, // Increased vertical movement for smoother effect
         visible: {
             opacity: 1,
-            y: 0, 
-            transition: { duration: 0.5 }, 
+            y: 0,
+            transition: { duration: 0.8 }, // Slower animation for each item
         },
     };
 
     return (
         <div className={styles.homepage}>
-            {/* Animated container */}
             <motion.div
                 className={styles['Homegrid-container']}
                 variants={containerVariants}
@@ -68,7 +66,7 @@ const HomePage = () => {
                         className={styles['Homegrid-item']}
                         style={{ backgroundColor: project.color }}
                         onClick={() => handleStartClick(project)}
-                        variants={itemVariants} 
+                        variants={itemVariants}
                     >
                         <span className={styles['Homeproject-name']}>{project.name}</span>
                     </motion.div>
