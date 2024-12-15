@@ -4,12 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion'; 
 
 const projects = [
-    { id: 1, name: 'Task List', color: '#e63946' },
-    { id: 2, name: 'e-Commerce Review', color: '#ec9a9a' },
-    { id: 3, name: 'Weather Forecast', color: '#f1faee' },
-    { id: 4, name: 'Translator', color: '#a8dadc' },
-    { id: 5, name: 'Frontend Web Showcase', color: '#457b9d' },
-    { id: 6, name: 'Feedback/Contact', color: '#1d3557' },
+    { id: 1, name: 'Task List', color: '#fff8d6' },
+    { id: 2, name: 'e-Commerce Review', color: '#fff0ad' },
+    { id: 3, name: 'Weather Forecast', color: '#ffe985' },
+    { id: 4, name: 'Translator', color: '#ffdd47' },
+    { id: 5, name: 'Frontend Web Showcase', color: '#ffd61f' },
+    { id: 6, name: 'Feedback/Contact', color: '#ffd100' },
 ];
 
 const HomePage = () => {

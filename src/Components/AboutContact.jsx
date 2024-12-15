@@ -18,6 +18,7 @@ import { SiMongodb } from "react-icons/si";
 import { TbCircleLetterAFilled } from "react-icons/tb";
 import { GoDotFill } from "react-icons/go";
 import { GoDot } from "react-icons/go";
+import { motion } from "framer-motion";
 
 
 
@@ -27,7 +28,11 @@ const AboutContact = () => {
   return (
     <div className={styles.Abcontainer}>
       <div className={styles.bentoContainer}>
-        <div className={styles.box1}>
+        <motion.div
+          className={styles.box1}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}>
           <h1 className={styles.abnametitle} >
             Antonia Trombetta Full-Stack Web Developer based in Bremen, germany
           </h1>
@@ -46,9 +51,13 @@ const AboutContact = () => {
             <FiGithub /> <a href="https://github.com/betafalc2">https://github.com/TrombettasInc</a>
             </li>
           </ul>
-        </div>
+        </motion.div>
 
-        <div className={styles.box2}>
+        <motion.div
+          className={styles.box2}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}>
           <p>
           I am a full-stack web developer with a strong background in customer service, 
           having recently completed the Ironhack Full-Stack Web Development Bootcamp, 
@@ -60,9 +69,14 @@ const AboutContact = () => {
           With a positive attitude and a passion for learning, 
           I am ready to embrace new challenges and make a valuable impact.
           </p>
-        </div>
+        </motion.div>
 
-        <div className={styles.box3}>
+        <motion.div
+          className={styles.box3}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
         <section className={styles.abexperiencesection} >
         <h3 className={styles.abexperiencejobtitle}> Team Supervisor Leader</h3>
         <div className={styles.abexperienceinfo}>
@@ -110,8 +124,13 @@ const AboutContact = () => {
             <li><IoIosArrowForward /> Led teams and professionals, fostering a collaborative environment and driving performance improvements.</li>
             </ul>
       
-        </div>
-        <div className={styles.box4}>
+        </motion.div>
+        <motion.div
+          className={styles.box4}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
 
         <section className={styles.abachievementsection} >
           <ul className={styles.abachievementul} >
@@ -124,9 +143,14 @@ const AboutContact = () => {
             </ul>
             </section>
 
-        </div>
+        </motion.div>
 
-        <div className={styles.box5}>
+        <motion.div
+          className={styles.box5}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.9 }}
+        >
   <div className={styles.innerBoxContainer}>
     <div className={styles.innerBox1}>
       <section className={styles.abskillsection}>
@@ -155,9 +179,14 @@ const AboutContact = () => {
      
     </div>
   </div>
-</div>
+</motion.div>
 
-        <div className={styles.box6}>
+<motion.div
+          className={styles.box6}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
         <section className={styles.abeducationsection} >
         <h3 className={styles.abeducationtitle}> Full-Stack Web Developer</h3>
        <div className={styles.abeducationinfo}> 
@@ -180,8 +209,13 @@ const AboutContact = () => {
         </section>
       
         
-        </div>
-        <div className={styles.box7}>
+        </motion.div>
+        <motion.div
+          className={styles.box7}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2 }}
+        >
           <section className={styles.abproject} >
             <h2 className={styles.abprojecth2} >Homey App</h2>
             <a  className={styles.abprojecta} href="https://myhomey.netlify.app/">https://myhomey.netlify.app/</a>
@@ -192,7 +226,7 @@ const AboutContact = () => {
             </ul>
           </section>
           
-        </div>
+        </motion.div>
        
       </div>
     </div>
