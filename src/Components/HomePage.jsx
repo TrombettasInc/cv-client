@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './HomePage.module.css';
 import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion'; // Import Framer Motion
+import { motion } from 'framer-motion'; 
 
 const projects = [
     { id: 1, name: 'Task List', color: '#e63946' },
@@ -33,23 +33,23 @@ const HomePage = () => {
         }
     };
 
-    // Variants for staggered animation
+    
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2, // Stagger animation by 0.2 seconds
+                staggerChildren: 0.2, 
             },
         },
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 20 }, // Start slightly below and invisible
+        hidden: { opacity: 0, y: 20 }, 
         visible: {
             opacity: 1,
-            y: 0, // Animate to original position
-            transition: { duration: 0.5 }, // Smooth animation
+            y: 0, 
+            transition: { duration: 0.5 }, 
         },
     };
 
@@ -68,7 +68,7 @@ const HomePage = () => {
                         className={styles['Homegrid-item']}
                         style={{ backgroundColor: project.color }}
                         onClick={() => handleStartClick(project)}
-                        variants={itemVariants} // Apply animation to each item
+                        variants={itemVariants} 
                     >
                         <span className={styles['Homeproject-name']}>{project.name}</span>
                     </motion.div>
